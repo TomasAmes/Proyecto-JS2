@@ -1,0 +1,239 @@
+/*IMPORTS*/
+
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;500 & display=swap');
+
+/*VARIABLES*/
+
+    /*Font Sizes*/
+
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text.xs: 1.2em;
+
+    /*Spacings*/
+
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem;
+
+
+/*NORMALIZE*/
+
+* ´{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--text-sm);
+    color: black;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container_main {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#comprador {
+    color: #FDFDFD;
+}
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabla-precios {
+ display:inline-block;
+ width:100%;
+ margin-top:50px
+}
+
+/*Columnas*/
+
+.precio-col {
+ display:inline-block;
+ background-color:#f3f3f3;
+ width:100%;
+ max-width:500px;
+ border-radius:10px;
+ margin-bottom:50px;
+ box-shadow: 0px 2px 5px #ddd
+}
+
+@media screen and (min-width:768px) {
+ .precio-col {
+ width:32%;
+ float:left;
+ margin-right:2%
+ }
+ 
+ .precio-col:last-child {
+ margin-right:0
+ }
+}
+
+/*Headers*/
+
+.precio-col-header {
+ background-color:#333;
+ padding:20px;
+ border-top-left-radius:10px;
+ border-top-right-radius:10px
+}
+
+.precio-col:nth-child(2) .precio-col-header {
+ background-color:#dd9933
+}
+
+.precio-col-header h3 {
+ color:#f3f3f3;
+ text-align:center;
+ font-size:30px;
+ font-weight:600;
+ margin-bottom:0
+}
+
+.precio-col-header p {
+ text-align:center;
+ color:#f3f3f3;
+ font-size:14px;
+ margin-bottom:0
+}
+
+/*Características*/
+
+.precio-col-features {
+ padding: 0 20px 20px 20px
+}
+
+.precio-col-features p {
+ padding:20px 0;
+ margin:0;
+ color: black;
+ text-align:center;
+ border-top:1px solid #ddd
+}
+
+.precio-col-features p:first-child,
+.precio-col-features p:last-child {
+ border-top:none
+}
+
+/*Comprar*/
+
+.precio-col-comprar {
+ padding:10px;
+ max-width:250px;
+ text-align:center;
+ background-color:#dd9933;
+ margin: 0 auto 20px;
+ border-radius:10px;
+ border: 2px solid #dd9933;
+ transition: all 0.3s
+}
+
+.precio-col-comprar a {
+ color:#f3f3f3;
+ padding:10px;
+ font-size:20px;
+ text-transform:uppercase;
+ transition: all 0.3s
+}
+
+.precio-col-comprar:hover {
+ background-color:#f3f3f3;
+ transition: all 0.3s
+}
+
+.precio-col-comprar:hover a {
+ color:#dd9933;
+ transition: all 0.3s
+}
+
+/*CARRITO*/
+
+.logo_cart {
+    width: 50px;
+    height: 50px;
+}
+
+.button_cart {
+    margin: 10px;
+}
+
+/*HEADER*/
+
+header {
+    padding: var(--sp-sm);
+    background-color: crimson;
+}
+
+.img_logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    color: #ddd;
+}
+/*Footer*/
+
+footer {
+    background-color: crimson;
+    padding: var(--sp-sm);
+    height: 100px
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.logos__align {
+    margin: 8px;
+    padding: 20px;
+    display: inline;
+}
+
+.logos .logos__align .logos__foot {
+    width: 50px;
+    height: 50px;
+    padding: 2mm;
+}
+
+
