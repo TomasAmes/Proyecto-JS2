@@ -79,7 +79,7 @@ body {
  width:100%;
  max-width:500px;
  border-radius:10px;
- margin-bottom:50px;
+ margin: 0px 8px 50px 8px;
  box-shadow: 0px 2px 5px #ddd
 }
 
@@ -142,6 +142,18 @@ body {
  border-top:none
 }
 
+.product-add-form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    justify-content: center;
+}
+
+.product-add-form label {
+    margin: 8px 0;
+    color: black;
+}
+
 /*Comprar*/
 
 .precio-col-comprar {
@@ -160,7 +172,8 @@ body {
  padding:10px;
  font-size:20px;
  text-transform:uppercase;
- transition: all 0.3s
+ transition: all 0.3s;
+ cursor: pointer;
 }
 
 .precio-col-comprar:hover {
@@ -175,13 +188,23 @@ body {
 
 /*CARRITO*/
 
-.logo_cart {
+.logo_checkout {
     width: 50px;
     height: 50px;
 }
 
-.button_cart {
+.button_checkout {
     margin: 10px;
+}
+
+#checkoutList {
+    list-style: none;
+    padding: 0;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*HEADER*/
